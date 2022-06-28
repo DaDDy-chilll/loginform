@@ -1,0 +1,19 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #d31818;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input_cs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

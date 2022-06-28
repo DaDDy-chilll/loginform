@@ -4,6 +4,7 @@ const ejs = require("ejs");
 const bdparser = require("body-parser");
 const mongo = require("mongoose");
 
+
 const app = express();
 
 app.set("view engine", "ejs");
@@ -11,7 +12,7 @@ app.use(bdparser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("Server is active");
+  res.sendFile()
 });
 
 app.listen(process.env.PORT, function () {

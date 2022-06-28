@@ -14,7 +14,8 @@
     "start": "node app.js"
   },
   "devDependencies": {
-    "@types/node": "^17.0.21"
+    "@types/node": "^17.0.21",
+    "nodemon": "^2.0.18"
   },
   "keywords": [],
   "description": "This login form have Authentication &  Security level 1 - 6"
