@@ -12,7 +12,7 @@ app.use(bdparser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendFile()
+  res.render('login',{loginHead:'Login',btn:'Submit'});
 });
 
 app.listen(process.env.PORT, function () {
