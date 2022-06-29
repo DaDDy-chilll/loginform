@@ -12,7 +12,12 @@ app.use(bdparser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render('login',{loginHead:'Login',btn:'Submit'});
+  res.render('login',{loginHead:'Login',btn_switch:'SignUp',btn_value:'signup'});
+});
+
+
+app.get('/signup',(req,res)=>{
+  res.render('login',{loginHead:'SignUp',btn_switch:'Login',btn_value:''});
 });
 
 app.listen(process.env.PORT, function () {

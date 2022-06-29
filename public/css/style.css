@@ -11,6 +11,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
+
 }
 .login-head{
   color: #4c4747;
@@ -55,4 +57,11 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   color: #4c4747;
+  background-color: #423f3f2f;
+
+  border-radius: 5px;
+}
+.signup-btn:hover{
+  background-color: #4c4747;
+  color: white;
 }
