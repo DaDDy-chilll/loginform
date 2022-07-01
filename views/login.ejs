@@ -3,11 +3,11 @@
         <div class="card">
             <h1 class="login-head my-4"><%= loginHead %></h1>
             <div class="login-form my-4">
-                <form action="/login" method="post" class="input_cs">
+                <form action="/<%= loginHead %>" method="post" class="input_cs">
                     <input type="email" name="email" id="email" placeholder="Enter your email" class="my-1 user-input">
                     <input type="password" name="pass" id="pass" placeholder="Enter your password" class="my-2 user-input">
                     <button type="submit" class="button_cs my-3"><%= loginHead %></button>
-                </form>
+                </form> 
             </div>
             <a href=/<%= btn_value %> class="mb-3 signup-btn"><%= btn_switch %></a>
         </div>
